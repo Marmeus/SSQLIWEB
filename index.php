@@ -35,7 +35,8 @@ if (!empty($_REQUEST["id"])) {
       // output data of each row
       echo "<tr>";
       while($row = $result->fetch_assoc()) {
-        echo "<td>" .$row["username"]. "</td><td>" . $row["email"]. "</td>";
+        echo "<td>" .$row["username"]. "</td>";
+        echo "<td>" . $row["email"]. "</td>";
       }
       echo "</tr>";
     } 
